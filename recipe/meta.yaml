@@ -1,18 +1,18 @@
 {% set name = "pyro-ppl" %}
-{% set version = "1.5.2" %}
+{% set version = "1.6.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 8a93af3a007ac507a8b50fd1165dbb355182d17df29d3b5bc498b02b479fdb27
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: ee181852713058f59d600dfa2e05bbc6f7f9b88fcdb4d2f1ccf61b0bf4794088
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -39,13 +39,13 @@ test:
     - pyro.poutine
 
 about:
-  home: "http://pyro.ai"
+  home: http://pyro.ai
   license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE.md
-  summary: "A Python library for probabilistic modeling and inference"
-  doc_url: "https://docs.pyro.ai/"
-  dev_url: "https://github.com/pyro-ppl/pyro/"
+  summary: A Python library for probabilistic modeling and inference
+  doc_url: https://docs.pyro.ai/
+  dev_url: https://github.com/pyro-ppl/pyro/
 
 extra:
   recipe-maintainers:
