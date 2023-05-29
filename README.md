@@ -1,11 +1,11 @@
-About pyro-ppl
-==============
+About pyro-ppl-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyro-ppl-feedstock/blob/main/LICENSE.txt)
 
 Home: http://pyro.ai
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyro-ppl-feedstock/blob/main/LICENSE.txt)
 
 Summary: A Python library for probabilistic modeling and inference
 
