@@ -1,5 +1,5 @@
 {% set name = "pyro-ppl" %}
-{% set version = "1.8.6" %}
+{% set version = "1.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 00d2f4dda8a53e66d955124dc6e49e92dcf570cd3bd706825091db764d93cd07
+  sha256: 41f4c005159568280fbc511648960a98a2b1a410027d8bd0a43220ac9b102cdf
 
 build:
   noarch: python
