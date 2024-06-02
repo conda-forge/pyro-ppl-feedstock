@@ -1,13 +1,13 @@
 {% set name = "pyro-ppl" %}
-{% set version = "1.9.0" %}
+{% set version = "1.9.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 41f4c005159568280fbc511648960a98a2b1a410027d8bd0a43220ac9b102cdf
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 5e1596de276c038a3f77d2580a90d0a97126e0104900444a088eee620bb0d65e
 
 build:
   noarch: python
